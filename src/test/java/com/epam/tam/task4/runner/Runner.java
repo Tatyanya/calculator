@@ -16,6 +16,8 @@ public class Runner {
         files.addAll(new ArrayList<String>() {
             {
                 add("./src/test/resources/calcAllTest.xml");
+                add("./src/test/resources/parallel.xml");
+
             }
         });
 
