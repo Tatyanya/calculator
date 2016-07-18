@@ -1,0 +1,29 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Calculator">
+    <test name="MultAndDivTest" >
+   <!--     <groups>
+            <run>
+                <include name="div"/>
+                <include name="mult"/>
+            </run>
+        </groups>-->
+        <classes>
+            <class name="com.epam.tam.task4.MultAndDivTest" />
+        </classes>
+    </test>
+    <test name="PowerAndRadicalTest" >
+        <classes>
+            <class name="com.epam.tam.task4.PowerAndRadicalTest" />
+        </classes>
+    </test>
+    <test name="SumAndSubTest" >
+        <classes>
+            <class name="com.epam.tam.task4.SumAndSubTest" />
+        </classes>
+    </test>
+    <test name="TrigonometryTest" >
+        <classes>
+            <class name="com.epam.tam.task4.TrigonometryTest" />
+        </classes>
+    </test>
+</suite>
