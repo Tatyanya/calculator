@@ -4,7 +4,7 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Factory;
 import org.testng.annotations.Test;
 import org.testng.Assert;
-
+import static com.epam.tat.module4.Timeout.sleep;
 
 
 public class PositiveNegativeTest extends BaseCalculatorTest {
@@ -21,12 +21,16 @@ public class PositiveNegativeTest extends BaseCalculatorTest {
 
     @Test
     public void checkValuePositive() {
+        sleep(1);
+        checkTime();
         Assert.assertTrue(calculator.isPositive(value) == expectedPositiveValue,
                 "Incorrect verification of positive value");
     }
 
     @Test
     public void checkValueNegative() {
+        sleep(1);
+        checkTime();
         Assert.assertTrue(calculator.isNegative(value) == expectedNegativeValue,
                 "Incorrect verification of negative value");
     }

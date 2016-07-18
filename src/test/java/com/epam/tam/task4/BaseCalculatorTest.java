@@ -1,7 +1,7 @@
 package com.epam.tam.task4;
 
 import org.testng.annotations.BeforeClass;
-
+import java.util.Date;
 import com.epam.tat.module4.Calculator;
 
 public class BaseCalculatorTest {
@@ -12,4 +12,7 @@ public class BaseCalculatorTest {
         calculator = new Calculator();
     }
 
+    protected void checkTime() {
+        System.out.println("Current time: " + new Date(System.currentTimeMillis()));
+    }
 } 

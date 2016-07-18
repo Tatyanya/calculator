@@ -13,6 +13,7 @@ public class PowerAndRadicalTest extends BaseCalculatorTest {
 
     @Test
     public void sqrtTest() {
+
         double result = calculator.sqrt(16);
         Assert.assertEquals(result, 4.0, "Invalid result of operation");
     }
