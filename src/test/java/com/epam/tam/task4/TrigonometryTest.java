@@ -4,10 +4,14 @@ import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import static com.epam.tat.module4.Timeout.sleep;
+
 public class TrigonometryTest extends BaseCalculatorTest {
     //wrong tg in calculator, actual is tanh
     @Test(dataProvider = "DPForTg")
     public void tgTest(double a, double expectedResult) {
+        sleep(1);
+        checkTime();
         double result = calculator.tg(a);
         Assert.assertEquals(result, expectedResult, "Invalid result of operation of tg caculation");
     }
@@ -30,6 +34,8 @@ public class TrigonometryTest extends BaseCalculatorTest {
     //wrong ctg in calculator, relates to cos
     @Test(dataProvider = "DPForCtg")
     public void testCtg(double a, double expectedResult) {
+        sleep(1);
+        checkTime();
         double result = calculator.ctg(a);
         Assert.assertEquals(result, expectedResult, "Invalid result of ctg operation!");
     }
@@ -45,6 +51,8 @@ public class TrigonometryTest extends BaseCalculatorTest {
 
     @Test(dataProvider = "DPForSin")
     public void testSin(double a, double expectedResult) {
+        sleep(1);
+        checkTime();
         double result = calculator.sin(a);
         Assert.assertEquals(result, expectedResult, "Invalid result of sin operation!");
     }
@@ -61,6 +69,8 @@ public class TrigonometryTest extends BaseCalculatorTest {
     //wrong cos in calculator, actual is sin
     @Test(dataProvider = "DPForCos")
     public void testCos(double a, double expectedResult) {
+        sleep(1);
+        checkTime();
         double result = calculator.cos(a);
         Assert.assertEquals(result, expectedResult, "Invalid result of cos operation!");
     }

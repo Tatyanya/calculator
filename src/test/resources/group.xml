@@ -1,0 +1,28 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Group" verbose="1" parallel="tests" thread-count="2">
+
+    <test name="Positive" >
+        <groups>
+            <run>
+                <include name="positive" />
+                <!--<exclude name="negative" />-->
+
+            </run>
+        </groups>
+        <classes>
+            <class name="com.epam.tam.task4.SumAndSubTest" />
+        </classes>
+    </test>
+    <test name="Negative" >
+        <groups>
+            <run>
+                <include name="negative" />
+                <!--<exclude name="positive" />-->
+
+            </run>
+        </groups>
+        <classes>
+            <class name="com.epam.tam.task4.SumAndSubTest" />
+        </classes>
+    </test>
+</suite>

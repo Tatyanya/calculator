@@ -1,10 +1,9 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="Parallel">
-    <!--parallel="methods" thread-count="2">-->
+<suite name="Parallel" parallel="methods" thread-count="2">
 
     <test name="Negative and positive numbers test">
         <classes>
-            <class name="com.epam.tam.task4.PositiveNegativeTest"></class>
+            <class name="com.epam.tam.task4.TrigonometryTest"></class>
         </classes>
     </test>
  <test name="PowerAndRadicalTest" >

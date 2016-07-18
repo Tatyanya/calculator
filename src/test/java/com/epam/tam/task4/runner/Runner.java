@@ -24,6 +24,8 @@ public class Runner {
             {
                 add("./src/test/resources/calcAllTest.xml");
                 add("./src/test/resources/parallel.xml");
+                add("./src/test/resources/group.xml");
+
             }
         });
 
