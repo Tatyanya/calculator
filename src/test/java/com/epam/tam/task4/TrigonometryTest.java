@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 import static com.epam.tat.module4.Timeout.sleep;
 
 public class TrigonometryTest extends BaseCalculatorTest {
-    //wrong tg in calculator, actual is tanh
+    //there is no exception in calculator for tg 90
     @Test(dataProvider = "DPForTg")
     public void tgTest(double a, double expectedResult) {
         sleep(1);
@@ -26,12 +26,13 @@ public class TrigonometryTest extends BaseCalculatorTest {
         };
     }
 
-/*    @Test(expectedExceptions = IllegalArgumentException.class)
-    public void ctg0Test(){
+    //there is no exception in calculator for ctg 0
+    @Test(expectedExceptions = IllegalArgumentException.class)
+    public void ctg0Test() {
         calculator.ctg(0);
-    }*/
+    }
 
-    //wrong ctg in calculator, relates to cos
+    //wrong tg in calculator, relates to cos
     @Test(dataProvider = "DPForCtg")
     public void testCtg(double a, double expectedResult) {
         sleep(1);

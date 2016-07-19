@@ -17,7 +17,7 @@ public class PowerAndRadicalTest extends BaseCalculatorTest {
         double result = calculator.sqrt(16);
         Assert.assertEquals(result, 4.0, "Invalid result of operation");
     }
-
+    //sqrt from a negative number
     @Test
     public void sqrtNegativeTest() {
         double result = calculator.sqrt(-16);
